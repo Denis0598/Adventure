@@ -1,0 +1,24 @@
+﻿@page
+@functions 
+{
+    public string? Fecha { get; set; }
+
+    public void OnGet()
+    {
+        ViewData["Title"] = "Adventure Work Web";
+        Model.Fecha = DateTime.Now.ToString("dd-MM");
+    }
+}
+<!DOCTYPE html>
+
+
+<div class="jumbotron">
+    <h1 class="display-3">Bienvenidos Hola Mundo</h1>
+    <p class="lead">Este es mi hola mundo</p>
+    <hr />
+    <p>Esta es una pagina Razor</p>
+    <p>Hoy es @Model.Fecha!</p>
+    <p>
+        
+    </p>
+</div>
